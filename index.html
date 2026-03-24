@@ -740,10 +740,10 @@
 <section class="try-it" id="try-it">
     <div class="container" style="text-align:center;">
         <div class="section-label">Try It Now</div>
-        <h2 class="section-title">Connect to a live Drupal site in 60 seconds</h2>
-        <p class="section-desc" style="margin-left:auto;margin-right:auto;">Copy this manifest URL and paste it into your AI agent. That's it.</p>
+        <h2 class="section-title">Connect to our live demo site in 60 seconds</h2>
+        <p class="section-desc" style="margin-left:auto;margin-right:auto;">This is a real Drupal demo site with AI Connect installed. Copy the manifest URL below and paste it into your AI agent.</p>
         <div class="manifest-block">
-            <span class="manifest-url" id="manifest-url">https://webmcp-connect-drupal.gold-t.co.il/api/ai-connect/v1/manifest</span>
+            <span class="manifest-url" id="manifest-url">http://webmcp-connect-drupal.gold-t.co.il/api/ai-connect/v1/manifest</span>
             <button class="btn-copy" onclick="copyManifest(this)">Copy URL</button>
         </div>
         <div class="client-tabs">
@@ -773,11 +773,20 @@
             </div>
         </div>
         <div class="test-creds fade-in">
-            <h4>Ready to install?</h4>
-            <p>Download the free module from GitHub and install it on your Drupal site.</p>
-            <a class="forum-link" href="https://github.com/chgold/drupal-ai-connect/releases/latest" target="_blank">Download v1.1.0 from GitHub</a>
+            <h4>Want to try it yourself?</h4>
+            <p>Connect your AI agent to our demo Drupal site and explore real articles, documentation, and content:</p>
+            <div class="creds-row">
+                <div class="cred-item">
+                    <span class="cred-label">Username:</span>
+                    <span class="cred-value">usertest</span>
+                </div>
+                <div class="cred-item">
+                    <span class="cred-label">Password:</span>
+                    <span class="cred-value">usertest</span>
+                </div>
+            </div>
         </div>
-        <p class="try-note">Works with any Drupal 9/10/11 site running PHP 8.0+</p>
+        <p class="try-note">This connects to a live Drupal demo site running AI Connect v1.1.0 &mdash; <a href="https://github.com/chgold/drupal-ai-connect/releases/latest" target="_blank" style="color:var(--cyan);">Download for your own site</a></p>
     </div>
 </section>
 
@@ -968,22 +977,22 @@
             <div class="step fade-in">
                 <div class="step-num">1</div>
                 <h3>Install the Module</h3>
-                <p>Install via drush (drush en ai_connect) or through the Drupal admin panel.</p>
+                <p>Install via drush (<code>drush en ai_connect</code>) or through the Drupal admin panel.</p>
             </div>
             <div class="step fade-in">
                 <div class="step-num">2</div>
-                <h3>Add the Manifest URL</h3>
-                <p>Copy your site's manifest URL into Claude Desktop, ChatGPT, or any WebMCP-compatible AI agent.</p>
+                <h3>Open AI Connect Settings</h3>
+                <p>Go to <strong>Configuration → AI Connect</strong> in your Drupal admin. You'll find your manifest URL and all pre-configured OAuth client definitions ready to copy.</p>
             </div>
             <div class="step fade-in">
                 <div class="step-num">3</div>
-                <h3>Approve Access</h3>
-                <p>When the AI agent needs access, your users approve via a secure OAuth consent screen on your site.</p>
+                <h3>Add the Manifest URL to Your Agent</h3>
+                <p>Paste the manifest URL from the settings page into Claude Desktop, ChatGPT, or any WebMCP-compatible AI agent.</p>
             </div>
             <div class="step fade-in">
                 <div class="step-num">4</div>
-                <h3>AI Chats with Your Site</h3>
-                <p>Ask questions, search nodes, read comments — the AI agent uses your site's tools naturally.</p>
+                <h3>Approve Access &amp; Start Chatting</h3>
+                <p>When the AI agent requests access, your users approve via a secure OAuth screen — then the AI can search nodes, read content, and query comments naturally.</p>
             </div>
         </div>
     </div>
